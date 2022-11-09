@@ -157,7 +157,33 @@
 
   <section class="s2">
     <div class="main-container">
-      Contact
+      <h3 style="text-align: center; ">Get In Touch</h3>
+
+      <form id="contact-form">
+
+        <div class="input-field">
+          <input placeholder="First Name" id="name" class="input-field" type="text" name="name">
+          <label for="name">First Name</label>
+        </div>
+
+        <div class="input-field">
+          <input placeholder="Subject" id="subject" class="input-field" type="text" name="subject">
+          <label for="name">Subject</label>
+        </div>
+
+        <div class="input-field">
+          <input placeholder="Email" id="email" class="input-field" type="text" name="email">
+          <label for="name">Email</label>
+        </div>
+
+        <div class="input-field col s6">
+          <i class="material-icons prefix">mode_edit</i>
+          <textarea id="message-box" class="materialize-textarea" name="message"></textarea>
+          <label for="message-box">Message</label>
+        </div>
+
+        <input id="submit-btn" type="submit" value="Send">
+      </form>
     </div>
   </section>
 
