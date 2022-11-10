@@ -300,7 +300,9 @@ h6 {
 
 #skills {
     display: flex;
-    justify-content: space-evenly;
+    padding-left: 30px;
+    padding-right: 20px;
+    justify-content: space-between;
     background-color: var(--previewShadow);
 }
 
