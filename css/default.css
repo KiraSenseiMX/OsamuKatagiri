@@ -181,8 +181,8 @@ h6 {
     display: block;
     margin: 0 auto;
 
-    height: 200px;
-    width: 200px;
+    height: 275px;
+    width: 275px;
     object-fit: cover;
     border: 2px solid var(--borderColor);
 }
@@ -247,14 +247,14 @@ h6 {
 
 #preview-shadow {
     background-color: var(--previewShadow);
-    width: 300px;
+    width: 350px;
     height: 180px;
     padding-left: 30px;
     padding-top: 30px;
 }
 
 #preview {
-    width: 300px;
+    width: 350px;
     border: 1.5px solid var(--lightBlue);
     background-color: var(--previewBg);
     padding: 15px;
