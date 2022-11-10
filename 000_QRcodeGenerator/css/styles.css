@@ -1,0 +1,113 @@
+.qr-code-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#generate-form {
+    display: block;
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid var(--borderColor);
+    padding: 15px;
+    border-radius: 5px;
+    background-color: var(--mainColor);
+    margin-bottom: 50px;
+}
+
+.form-wrapper {
+    grid-area: form-wrapper;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    /* border: 1px dashed salmon; */
+}
+
+.image-wrapper {
+    grid-area: image-wrapper;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    /* border: 1px dashed salmon; */
+}
+
+.input-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        'form-wrapper form-wrapper image-wrapper'
+    ;
+}
+
+.spinner::before {
+    animation: 1.5s linear infinite spinner;
+    animation-play-state: inherit;
+    border: solid 5px #cfd0d1;
+    border-bottom-color: #1c87c9;
+    border-radius: 50%;
+    content: "";
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    will-change: transform;
+}
+
+.spinner {
+    grid-area: spinner;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    position: relative;
+    /* border: 1px dashed salmon; */
+}
+
+.m-auto {
+    grid-area: m-auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    /* border: 1px dashed salmon; */
+}
+
+.output-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        'spinner'
+        'm-auto'
+    ;
+    position: relative;
+}
+
+@keyframes spinner {
+    0% {
+        transform: translate3d(-50%, -50%, 0) rotate(0deg);
+    }
+
+    100% {
+        transform: translate3d(-50%, -50%, 0) rotate(360deg);
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .input-wrapper {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            'image-wrapper'
+            'form-wrapper'
+        ;
+    }
+
+    .image-wrapper {
+        padding-bottom: 0px;
+    }
+
+    .qr-code-image {
+        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
