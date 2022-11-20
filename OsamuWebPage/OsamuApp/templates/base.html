@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Some Demo Blog - {% block title %}{% endblock %}</title>
+        <title>{% block title %}{% endblock %}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="{% static 'styles/tachyons.min.css' %}'">
         <link rel="stylesheet" href="{% static 'styles/blog.css' %}'">
@@ -13,7 +13,7 @@
         </section>
         <footer class="mw7 center">
             <div class="pv4 bt bb b--black-10 ph3 ph0-l">
-                <p>This is a demo site built with</p>
+                <p>This is a demo site built with Django and React</p>
             </div>
         </footer>
     </body>

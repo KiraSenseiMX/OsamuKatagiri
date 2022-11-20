@@ -9,9 +9,5 @@ def get_index():
     return None
 
 urlpatterns = [
-    distill_path('',
-                 IndexView.as_view(),
-                 name='blog-index',
-                 distill_func=get_index,
-                 distill_file='index.html'),
+    distill_path('', IndexView.as_view(), name='OsamuApp-index'),
 ]
