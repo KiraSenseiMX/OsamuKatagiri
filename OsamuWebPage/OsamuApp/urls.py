@@ -3,10 +3,7 @@
 from django_distill import distill_path
 
 # Import some views from your Django app
-from OsamuApp.views import IndexView
-
-def get_index():
-    return None
+from OsamuApp.views import *
 
 urlpatterns = [
     distill_path('', IndexView.as_view(), name='OsamuApp-index'),
