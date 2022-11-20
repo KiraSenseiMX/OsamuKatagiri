@@ -1,11 +1,25 @@
 [[source]]
-name = "pypi"
 url = "https://pypi.org/simple"
 verify_ssl = true
+name = "pypi"
+
+[packages]
+django = "~=3.2"
+django-distill = "*"
+django-sass-processor = "*"
+libsass = "*"
+django-compressor = "*"
+requests = "*"
+feedparser = "*"
+python-dateutil = "*"
+markdown = "*"
+pyyaml = "*"
+beautifulsoup4 = "*"
+importlib-metadata = "*"
+typing-extensions = "*"
+django-cachekiller = "*"
 
 [dev-packages]
 
-[packages]
-Django = "*"
-django-distill = "*"
-django-cachekiller = "*"
+[requires]
+python_version = "3"
