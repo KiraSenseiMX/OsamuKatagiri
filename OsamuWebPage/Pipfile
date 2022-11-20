@@ -6,6 +6,6 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
+Django = "*"
 django-distill = "*"
 django-cachekiller = "*"
-Django = "*"
