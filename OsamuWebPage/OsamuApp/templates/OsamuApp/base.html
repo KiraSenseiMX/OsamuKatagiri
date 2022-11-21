@@ -1,0 +1,43 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+
+    <!-- DOCUMENT TITLE  -->
+    <title>{% block title %}{% endblock %}</title>
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/x-icon" href="{% static 'OsamuApp/images/myLogoSmall.png' %}" sizes="58x85" />
+
+    <!-- MATERIALIZE CSS  -->
+    <link rel="stylesheet" href="{% static 'OsamuApp/styles/materialize.css' %}" />
+    <link rel="stylesheet" href="{% static 'OsamuApp/styles/style.css' %}" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="{% static 'OsamuApp/styles/default.css' %}">
+    <link id="theme-style" rel="stylesheet" href="">
+
+</head>
+
+<body>
+    <section>
+        {% block content %}{% endblock %}
+    </section>
+    <footer>
+        <div>
+            <p>This is a demo site built with Django and React</p>
+        </div>
+    </footer>
+</body>
+
+</html>
