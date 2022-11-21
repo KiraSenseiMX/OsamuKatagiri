@@ -20,19 +20,19 @@ for (var i = 0; themeDots.length > i; i++) {
 
 function setTheme(mode) {
     if (mode == 'light') {
-        document.getElementById('theme-style').href = "static/OsamuApp/styles/default.css"
+        document.querySelector('#theme-style').href = "static/OsamuApp/styles/default.css"
     }
 
     if (mode == 'blue') {
-        document.getElementById('theme-style').href = "static/OsamuApp/styles/blue.css"
+        document.querySelector('#theme-style').href = "static/OsamuApp/styles/blue.css"
     }
 
     if (mode == 'green') {
-        document.getElementById('theme-style').href = "static/OsamuApp/styles/green.css"
+        document.querySelector('#theme-style').href = "static/OsamuApp/styles/green.css"
     }
 
     if (mode == 'purple') {
-        document.getElementById('theme-style').href = "static/OsamuApp/styles/purple.css"
+        document.querySelector('#theme-style').href = "static/OsamuApp/styles/purple.css"
     }
 
     localStorage.setItem('theme', mode)
