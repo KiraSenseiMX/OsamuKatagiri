@@ -1,9 +1,192 @@
 {% extends 'OsamuApp/base.html' %}
+{% load static %}
 
 {% block title %}
-    Osamu Katagiri
+Osamu Katagiri
 {% endblock %}
 
 {% block content %}
-    <h1>Hello, Osamu Katagiri-Tanaka !!</h1>
+
+<section class="s1">
+    <div class="main-container">
+
+        <div class="greeting-wrapper">
+            <h1>Hi, I'm Osamu Katagiri</h1>
+        </div>
+
+        <div class="intro-wrapper">
+            <div class="nav-wrapper">
+
+                <div class="dots-wrapper">
+                    <div id="dot-1" class="browser-dot"></div>
+                    <div id="dot-2" class="browser-dot"></div>
+                    <div id="dot-3" class="browser-dot"></div>
+                </div>
+
+                <ul id="navigation">
+                    <li>
+                        <a href="{% url 'OsamuApp:index' %}#my-projects">
+                            <i class="small material-icons">home</i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="left-column">
+                <img id="profile_pic" src="{% static 'OsamuApp/images/meFiesole.jpg' %}">
+                <h5 style="text-align: center; line-height: 0;">Personalize Theme</h5>
+
+                <div id="theme-options-wrapper">
+                    <div data-mode="light" id="light-mode" class="theme-dot"></div>
+                    <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+                    <div data-mode="green" id="green-mode" class="theme-dot"></div>
+                    <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
+                </div>
+
+                <p id="settings-note">* Theme settings will be saved for<br>your next visit</p>
+            </div>
+
+            <div class="right-column">
+
+                <div id="preview-shadow">
+                    <div id="preview">
+                        <div id="corner-tl" class="corner"></div>
+                        <div id="corner-tr" class="corner"></div>
+                        <h3>What I Do</h3>
+                        <p>I was a Software Developer in a past life, now I enjoy Systems Engineering.</p>
+                        <div id="corner-br" class="corner"></div>
+                        <div id="corner-bl" class="corner"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="s2">
+    <div class="main-container">
+        <div class="about-wrapper">
+            <div class="about-me">
+                <h4>More about me</h4>
+                <p>I'm a technology professional currently working as a <b>Systems Engineer</b> at GE Aerospace in
+                    Queretaro,
+                    Mexico. I develop system requirements for the Boeing 777X Common Core System. I am a graduate of the
+                    GE
+                    Aviation Systems Edison Engineering Development Program.</p>
+                <p>In the past I participated as a <b>Embedded Software Developer</b> for the Electrical Load Management
+                    System, also for the 777X aircraft.</p>
+
+                <hr>
+
+                <h4>TOP EXPERTISE</h4>
+                <p>Digital Systems & Robotics Engineer with primary focus on Systems & Software Development: <a
+                        target="_blank" href="{% static 'OsamuApp/documents/CV_OsamuKatagiri_Nov2022.pdf' %}">Download Resume</a></p>
+
+                <div id="skills">
+                    <ul>
+                        <li>Python</li>
+                        <li>Javascript</li>
+                        <li>LaTeX</li>
+                        <li>C</li>
+                        <li>C++</li>
+                        <li>System Requirements Specification</li>
+                    </ul>
+
+                    <ul>
+                        <li>ADA</li>
+                        <li>Verilog</li>
+                        <li>VHDL</li>
+                        <li>Agile Methodology</li>
+                        <li>Lean Six Sigma</li>
+                        <li>DOORS and Rational Team Concert</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="social-links">
+                <img id="social_img" src="{% static 'OsamuApp/images/Boeing_777_9X_20.jpg' %}">
+                <p style="font-size: 8px;">Airline Boeing Company;Registration N779XW;Manufacturer Boeing;Type
+                    777-9;Airport
+                    Snohomish County Airport/Paine Field, KPAE;Country United States, Washington;Photo Date 17th August
+                    2019;Photographer <a target="_blank" href="https://www.v1images.com/photographer/huy-do/">Huy Do</a>
+                </p>
+                <h3>Find me on <br> <a target="_blank" href="https://www.linkedin.com/in/osamu-k-84b2b940">LinkedIn:
+                        Osamu
+                        Katagiri-Tanaka</a></h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="my-projects" class="s1">
+    <div class="main-container">
+        <h3 style="text-align: center; ">Some of my past projects</h3>
+
+        <div class="post-wrapper">
+
+            <div href="#">
+                <div class="post">
+                    <img class="thumbnail" src="{% static 'OsamuApp/images/thumbnail_QRcodeGenerator.png' %}">
+                    <div class="post-preview">
+                        <h6 class="post-title">QR Code Generator</h6>
+                        <p class="post-intro">QR Codes allow smartphone users to access your website simply and quicly.
+                        </p>
+                        <a href="#">Open Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <!--         <div>
+          <div class="post">
+            <img class="thumbnail" src="images/meFiesole.jpg">
+            <div class="post-preview">
+              <h6 class="post-title">Post Title</h6>
+              <p class="post-intro">This is a sentence. Some more text.</p>
+              <a href="post.html">Read More</a>
+            </div>
+          </div>
+        </div> -->
+
+            <!--         <div>
+          <div class="post">
+            <img class="thumbnail" src="images/meFiesole.jpg">
+            <div class="post-preview">
+              <h6 class="post-title">Post Title</h6>
+              <p class="post-intro">This is a sentence. Some more text.</p>
+              <a href="post.html">Read More</a>
+            </div>
+          </div>
+        </div> -->
+
+        </div>
+    </div>
+</section>
+
+<section class="s2">
+    <div class="main-container">
+        <h3 style="text-align: center; ">Get In Touch</h3>
+
+        <form id="contact-form">
+
+            <div class="input-field">
+                <input placeholder="Enter your Name" id="name" class="input-field" type="text" name="name">
+                <label for="name">Name</label>
+            </div>
+
+            <div class="input-field">
+                <input placeholder="Enter your Email" id="email" class="input-field" type="text" name="email">
+                <label for="email">Email</label>
+            </div>
+
+            <div class="input-field col s6">
+                <i class="material-icons prefix">mode_edit</i>
+                <textarea id="message-box" class="materialize-textarea" name="message"></textarea>
+                <label for="message-box">Enter your Message</label>
+            </div>
+
+            <input id="submit-btn" type="submit" value="Send">
+        </form>
+    </div>
+</section>
+
 {% endblock %}

@@ -21,23 +21,27 @@
 
     <!-- FONTS -->
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap"
+        rel="stylesheet">
 
     <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="{% static 'OsamuApp/styles/default.css' %}">
-    <link id="theme-style" rel="stylesheet" href="">
+    <link rel="stylesheet" id="theme-style" href="">
 
 </head>
 
 <body>
-    <section>
-        {% block content %}{% endblock %}
-    </section>
-    <footer>
-        <div>
-            <p>This is a demo site built with Django and React</p>
-        </div>
-    </footer>
+
+    {% block content %}{% endblock %}
+
+    <!-- MATERIALIZE Scripts -->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="{% static 'OsamuApp/scripts/materialize.js' %}"></script>
+    <script src="{% static 'OsamuApp/scripts/init.js' %}"></script>
+
+    <!-- CUSTOM Scripts -->
+    <script type="text/Javascript" src="{% static 'OsamuApp/scripts/themeScript.js' %}"></script>
+
 </body>
 
 </html>

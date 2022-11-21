@@ -5,6 +5,7 @@ from django_distill import distill_path
 # Import some views from your Django app
 from OsamuApp.views import *
 
+app_name = 'OsamuApp'
 urlpatterns = [
-    distill_path('', IndexView.as_view(), name='OsamuApp-index'),
+    distill_path('', IndexView.as_view(), name='index'),
 ]
