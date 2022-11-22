@@ -1,6 +1,5 @@
 asgiref
 Django
-whitenoise
 gunicorn
 psycopg2
 sqlparse
