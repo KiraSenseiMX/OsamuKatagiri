@@ -1,11 +1,9 @@
-# Replaces the standard django.urls.path, identical syntax
-# from django.urls import path
-from django_distill import distill_path
+from django.urls import path
 
 # Import some views from your Django app
-from OsamuApp.views import *
+from . import views
 
 app_name = 'OsamuApp'
 urlpatterns = [
-    distill_path('', IndexView.as_view(), name='index'),
+    path("", views.IndexView, name="index"),
 ]

@@ -37,3 +37,20 @@ function setTheme(mode) {
 
     localStorage.setItem('theme', mode)
 }
+
+/* function getScreenshot() {
+    html2canvas(const.querySelector("html")).then(canvas => {
+        document.querySelector(".thumbnail").replaceChildren(canvas)
+    });
+} */
+
+
+async function getScreenshot() {
+/*     let browser = await chromium.launch();
+    let page = await browser.newPage();
+    await page.setViewportSize({ width: 1280, height: 1080 });
+    await page.goto("http://nytimes.com");
+    await page.screenshot({ path: `nyt-playwright-chromium.png` });
+    await browser.close(); */
+};
+
