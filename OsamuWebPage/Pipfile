@@ -20,5 +20,6 @@ importlib-metadata = "*"
 typing-extensions = "*"
 html2image = "*"
 Pillow = "*"
+gunicorn = "*"
 
 [dev-packages]
