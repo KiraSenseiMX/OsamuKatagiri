@@ -33,7 +33,6 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     # ... Django project apps here ...
-    'django_distill',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -43,6 +42,7 @@ INSTALLED_APPS = [
 
     # ... local site apps here ...
     'OsamuApp',
+    'screenshotApp',
 ]
 
 MIDDLEWARE = [
@@ -126,4 +126,9 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-DISTILL_DIR = os.path.join(BASE_DIR, 'public')
+# Since we will deal with media files, we will use the default
+# FileSystemStorage provided by Django. Add the necessary configurations
+# for FileSystemStorage in the settings.py file.
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
