@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'django.contrib.staticfiles',
+    # 'django.contrib.staticfiles', # remove as we added them un urls
 
     # ... local site apps here ...
     'OsamuApp',
@@ -121,8 +121,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [BASE_DIR / 'static',] # to run locally
-STATIC_ROOT = BASE_DIR / 'staticfiles' # for production
+STATICFILES_DIRS = [BASE_DIR / 'static',] # to search static files that are not within an app
+STATIC_ROOT = BASE_DIR / 'staticfiles' # static files for production (in STATIC_URL + STATICFILES_DIRS)
 
 
 # Default primary key field type
