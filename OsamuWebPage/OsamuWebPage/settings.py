@@ -41,7 +41,6 @@ INSTALLED_APPS = [
 
     # ... local site apps here ...
     'OsamuApp',
-    'screenshotApp',
 ]
 
 MIDDLEWARE = [
