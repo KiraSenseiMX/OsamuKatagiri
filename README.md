@@ -1,2 +1,1 @@
 # OsamuKatagiri
-osamukatagiri.me
